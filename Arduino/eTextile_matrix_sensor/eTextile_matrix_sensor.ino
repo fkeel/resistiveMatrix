@@ -52,10 +52,10 @@ PacketSerial serial;
 #define  BAUD_RATE            230400 // With Teensy, it's always the same native speed. The baud rate setting is ignored.
 #define  ROWS                 16
 #define  COLS                 16
-#define  DATAS                256   // 
+#define  DATAS                256   //
 #define  LED_PIN              13    // Teensy  built-in LED
-#define  BUTTON_PIN           32    // 
-#define  CALIBRATION_CYCLES   4     // 
+#define  BUTTON_PIN           32    //
+#define  CALIBRATION_CYCLES   4     //
 #define  CURVE                5     // Set the sensors logarithmic curve responds 0-10
 
 // Digital pins array
@@ -78,8 +78,8 @@ int calibrationCounter = 0;
 
 void setup() {
   // We must specify a packet handler method so that
-  serial.setPacketHandler(&onPacket);
-  serial.begin(BAUD_RATE);
+  //serial.setPacketHandler(&onPacket);
+  //serial.begin(BAUD_RATE);
 
   analogReadRes(10);                     // Set the ADC converteur resolution to 10 bit
   pinMode(LED_PIN, OUTPUT);              // Set rows pins in high-impedance state
@@ -93,10 +93,12 @@ void setup() {
 
   // while (!Serial.dtr());                   // wait for user to start the serial monitor
   bootBlink(6);
-  delay(500);
+  //Serial.begin(115200);
 }
 
 void loop() {
+  static int valueMaxOld = 0;
+  int valueMax = 0;
 
   if (scan) {
     for (int row = 0; row < ROWS; row++) {
@@ -121,19 +123,40 @@ void loop() {
           value = constrain(value, 0, 255);
           myPacket[sensorID] = (byte)value;
           // myPacket[sensorID] = (byte)log2optim(value); // NOT WOKING
+
+          if (valueMax < value) {
+              valueMax = value;
+          }
         }
       }
       // Set row pin in high-impedance state
       pinMode(rowPins[row], INPUT);
     }
-    scan = false;
+    scan = true;
+
+    /*Serial.print(valueMax);
+    Serial.print('\t');
+    for (int i=0; i<valueMax/2; i++)
+        Serial.print('*');
+    Serial.print('\n');
+*/
+    const int threshold = 50;
+    const int delta = 30;
+    // detect speed
+    if (valueMax > threshold && (valueMax-valueMaxOld) > delta) {
+      usbMIDI.sendNoteOn(60, valueMax, 1);  // 60 = C4, amplitude = 99, channel = 1
+      delay(1);
+      usbMIDI.sendNoteOff(60, 0, 1);
+      //Serial.println("NOTE ON");
+    }
+    valueMaxOld = valueMax;
   }
   // The update() method attempts to read in
   // any incoming serial data and emits packets via
   // the user's onPacket(const uint8_t* buffer, size_t size)
   // method registered with the setPacketHandler() method.
   // The update() method should be called at the end of the loop().
-  serial.update();
+  //serial.update();
 }
 
 // This is our packet callback.
@@ -141,7 +164,7 @@ void loop() {
 void onPacket(const uint8_t* buffer, size_t size) {
   // The send() method will encode the buffer
   // as a packet, set packet markers, etc.
-  serial.send(myPacket, DATAS);
+  //serial.send(myPacket, DATAS);
   scan = true;
 }
 
