@@ -5,6 +5,11 @@
 - Licence : GNU GENERAL PUBLIC LICENSE
 - Web site : http://etextile.org
 
+
+This PCB is adapted to an eTextile bus solution that allows the connection betwin the textile matrix conductive strips and the microcontroller I/O pins.
+![alt tag](http://wiki.datapaulette.org/lib/exe/fetch.php/atelier/projets/matrice_capteurs_textiles_05.jpg)
+The E256 branch of this project present a new PCB design based on etching conductive fabric.
+
 ## Partslist
 
 | Part        |    Value                     |     Device              |          Package     |
