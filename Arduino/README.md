@@ -9,6 +9,8 @@
 - This Arduino Sketch require:
  - Teensyduino : http://pjrc.com/teensy/teensyduino.html
  - PacketSerial : https://github.com/bakercp/PacketSerial
+ - Linux - UDEV Rules for Teensy boards : https://www.pjrc.com/teensy/49-teensy.rules
+
 
 ### Settings for Arduino IDE
 - Board:           Teensy 3.2 / 3.1
