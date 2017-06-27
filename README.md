@@ -3,7 +3,7 @@
 ### Transforming textiles into an intuitive way to interact with computers. This project is part of an electronic textiles research on HCI gesture interaction that was started in 2005.
 
 - Credit : Maurin Donneaud <maurin@datapaulette.org>
-- Repository : https://github.com/MaurinElectroTextile/eTextile_matrix_sensor
+- Repository : https://github.com/eTextile/resistiveMatrix/
 - Project web page : http://eTextile.org
 
 ![alt tag](https://farm6.staticflickr.com/5572/30306414062_22bba76566_z_d.jpg)
