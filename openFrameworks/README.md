@@ -33,6 +33,7 @@ The two 1st addons don't come by default with oFx but you can install them:
     UDEV Rules for Teensy boards
     $ cd /etc/udev/rules.d/
     $ sudo wget https://www.pjrc.com/teensy/49-teensy.rules
+    $ sudo udevadm control --reload-rules
     $ sudo apt-get install ccache
 
 ## Compiling
