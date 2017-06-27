@@ -8,7 +8,7 @@
 ## Requirements
 OpenFrameworks 0.9.4 (it's not currently supported with newer versions):
 
-    http://openframeworks.cc/
+    ttp://www.openframeworks.cc/versions/v0.9.4/of_v0.9.4_linux64_release.tar.gz
 
 To compile the code, you need to set the following variable in your ~/.bashrc, ~/.zshrc or other equivalent:
 
