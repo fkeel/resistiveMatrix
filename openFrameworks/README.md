@@ -6,7 +6,6 @@
 - Web site: http://etextile.org
 
 ## Requirements
-
 OpenFrameworks 0.9.4 (it's not currently supported with newer versions):
 
     http://openframeworks.cc/
@@ -16,7 +15,8 @@ To compile the code, you need to set the following variable in your ~/.bashrc, ~
     # UPDATE WITH YOUR OWN OPEN FRAMEWORKS PATH:
     export OF_ROOT=/opt/openFrameworks/
 
-This Program requires the following addons:
+### oFx Addons dependences
+This Program requires the following oFx addons:
  - ofxIO
  - ofxSerial
  - ofxOsc
@@ -29,8 +29,11 @@ The two 1st addons don't come by default with oFx but you can install them:
     git clone -b stable https://github.com/bakercp/ofxIO # tested with commit ef09791
     git clone https://github.com/bakercp/ofxSerial       # tested with commit 8086059
 
-
-    sudo apt-get install ccache
+### Linux requirements
+    UDEV Rules for Teensy boards
+    $ cd /etc/udev/rules.d/
+    $ sudo wget https://www.pjrc.com/teensy/49-teensy.rules
+    $ sudo apt-get install ccache
 
 ## Compiling
 
