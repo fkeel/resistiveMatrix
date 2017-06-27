@@ -30,6 +30,8 @@ The two 1st addons don't come by default with oFx but you can install them:
     git clone https://github.com/bakercp/ofxSerial       # tested with commit 8086059
 
 
+    sudo apt-get install ccache
+
 ## Compiling
 
     make
