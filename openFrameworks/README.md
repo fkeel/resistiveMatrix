@@ -63,6 +63,6 @@ you can send a /reset message to clear the map (remove all points).
 
 
 ## TODO
-- Add OSCBundle
+- Add XML config file
 - Update openFrameworks TUIO wrapper : https://github.com/arturoc/ofxTuioWrapper
 - add TUIO
