@@ -1,10 +1,11 @@
-# e-Textile matrix sensor
+# eTextile matrix sensor
 
-- Purpose : 16x16 e-textile matrix sensors
-- Copyright (c) 2014 Maurin Donneaud
-- Licence : GNU GENERAL PUBLIC LICENSE
-- Web site : http://etextile.org
+### Transforming textiles into an intuitive way to interact with computers. This project is part of an electronic textiles research on HCI gesture interaction that was started in 2005.
 
+- Author/developer: Maurin Donneaud <maurin@etextile.org> - Industrial designer
+- Repository: https://github.com/eTextile/resistiveMatrix/tree/master
+- Project web page: www.eTextile.org
+- License: CC-BY-SA (see the License file)
 
 ![alt tag](http://wiki.datapaulette.org/lib/exe/fetch.php/atelier/projets/matrice_capteurs_textiles_05.jpg)
 
