@@ -3,7 +3,7 @@
 ### Transforming textiles into an intuitive way to interact with computers. This project is part of an electronic textiles research on HCI gesture interaction that was started in 2005.
 
 - Author/developer: Maurin Donneaud <maurin@etextile.org> - Industrial designer
-- Repository: https://github.com/eTextile/resistiveMatrix/tree/E256
+- Repository: https://github.com/eTextile/resistiveMatrix/tree/master
 - Project web page: www.eTextile.org
 - License: CC-BY-SA (see the License file)
 
@@ -11,8 +11,8 @@
 
 ## About The project
 
-Using a fabric to sense the touch is now possible with the E256 eTextile matrix sensor.
-The E256 eTextile matrix sensor is a development kit for designers, makers and companies who want to combine textile and programing to imagine new projects.
+Using a fabric to sense the touch is now possible with the eTextile matrix sensor.
+The eTextile matrix sensor is a development kit for designers, makers and companies who want to combine textile and programing to imagine new projects.
 This kit features 30cm by 30cm sensitive textile that allow multi touch sensing and pressures topographic analysis.
 This textile sensor can be connected to any microcontrollers with ADC capabilities.
 The electronic hardware and all the software are fully open source.
@@ -26,10 +26,10 @@ From the beginning this project stimulates the development of technologies in ar
 ## Project content
 - Arduino firmware: work with all Arduino boards and Teensy!
 - OpenFrameworks software: real time 3D visualization and OSC communication
-- Open Hardware PCB made with [Upverter](https://upverter.com/): GERBER files to produce the PCB
+- Open Hardware PCB made with Upverter: GERBER files to produce the PCB
 - Open Hardware DIY eTextile sensor: see the HOWTO.pdf
 
-## E256 kit Ordering
+## Kit Ordering
 If you want a sensor just drop me an eMail at contact@eTextile.org
 I make all sensors bay hand. It take one or two days to make it and send it by post.
 All sensors are tested before shipping.
