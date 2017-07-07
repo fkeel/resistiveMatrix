@@ -12,7 +12,7 @@
 ## About The project
 
 Using a fabric to sense the touch is now possible with the eTextile matrix sensor.
-The eTextile matrix sensor is a development kit for designers, makers and companies who want to combine textile and programing to imagine new projects.
+The eTextile matrix sensor is a development kit for designers, makers and companies who want to combine textile and programing into new eTextile projects.
 This kit features 30cm by 30cm sensitive textile that allow multi touch sensing and pressures topographic analysis.
 This textile sensor can be connected to any microcontrollers with ADC capabilities.
 The electronic hardware and all the software are fully open source.
