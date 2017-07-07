@@ -33,9 +33,7 @@ From the beginning this project stimulates the development of technologies in ar
 If you want a sensor just drop me an eMail at contact@eTextile.org
 I make all sensors bay hand. It take one or two days to make it and send it by post.
 All sensors are tested before shipping.
-If you have any mistake I will help you to fix it or replace the product.
-- Development kit 200€ : the eTextile matrix sensor with its electronic controleur
-- Starter kit 250€ : the eTextile matrix sensor with its electronic controleur and a teensy board
+If you have any mistake I will help you to fix it or replace it.
 
 ## Docs
 - [A video made at Schmiede 2014](http://www.kobakant.at/DIY/?p=4305/)
