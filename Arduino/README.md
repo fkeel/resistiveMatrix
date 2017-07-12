@@ -35,8 +35,9 @@ As an example here is how a 4*4 frame would be encoded :
 ![alt tag](http://etextile-summercamp.org/swatch-exchange/wp-content/uploads/2015/05/Matrix_011.png)
 
 ## TODO
-- Add blob detection
- - Fork OpenMV : https://github.com/openmv/openmv
- - ...
-- Add TUIO serveur
 - Add synchronous dual ADC sampling : https://github.com/pedvide/ADC/blob/master/examples/synchronizedMeasurements/synchronizedMeasurements.ino
+- Add blob detection
+  - Fork OpenMV / imlib_find_blobs() : https://github.com/openmv/openmv/blob/master/src/omv/img/blob.c
+- Add OSC/TUIO communication
+
+
