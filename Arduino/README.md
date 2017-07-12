@@ -130,9 +130,10 @@ ROWS = One 8_Bits shift register connected to two analog multiplexers that sens 
 - ROW_14 -> Y0 : 00001000 -> HEX 0x8
 - ROW_15 -> Y3 : 01101000 -> HEX 0x68
 
-
 ## TODO
+- Add synchronous dual ADC sampling : https://github.com/pedvide/ADC/blob/master/examples/synchronizedMeasurements/synchronizedMeasurements.ino
+- Add bilinear interpolation
 - Add blob detection
- - Fork OpenMV : https://github.com/openmv/openmv
- - ...
-- Add TUIO serveur
+  - Fork OpenMV / imlib_find_blobs() : https://github.com/openmv/openmv/blob/master/src/omv/img/blob.c
+- Add OSC/TUIO communication
+
