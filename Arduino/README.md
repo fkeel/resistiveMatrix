@@ -39,3 +39,4 @@ As an example here is how a 4*4 frame would be encoded :
  - Fork OpenMV : https://github.com/openmv/openmv
  - ...
 - Add TUIO serveur
+- Add synchronous dual ADC sampling : https://forum.pjrc.com/threads/32565-True-simultaneous-dual-ADC-sampling-on-Teensy-3-1-3-2-and-some-DAC-work-(semi-noob)
