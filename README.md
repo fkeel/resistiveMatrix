@@ -24,7 +24,7 @@ This software analyses the touch to trigger OSC messages that can be used in aud
 From the beginning this project stimulates the development of technologies in artistic use cases: playing music, combine graphics and sound, imagine objects that can have tactile properties, etc.
 
 ## Project content
-- Arduino firmware: work with all Arduino boards and Teensy!
+- Arduino firmware: work with Teensy 3.1 & 3.2
 - OpenFrameworks software: real time 3D visualization and OSC communication
 - Open Hardware PCB made with Upverter: GERBER files to produce the PCB
 - Open Hardware DIY eTextile sensor: see the HOWTO.pdf
