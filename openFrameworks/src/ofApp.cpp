@@ -54,7 +54,7 @@ void ofApp::setup() {
 
     gui.setup("Parameters");
     gui.add(toggleDsp.setup(" Dsp ", true ));
-    gui.add(sliderVolume.setup(" Volume ", 170, 0, 180));
+    gui.add(sliderVolume.setup(" Volume ", 10, 0, 20));
     gui.add(sliderTreshold.setup(" Threshold ", 15, 0, 150));
 
     ofBackground(0);
@@ -123,9 +123,9 @@ void ofApp::update() {
         // Take the abs value of the difference between background and incoming and then threshold:
         grayDiff.absDiff(grayBg, grayImage);
         grayDiff.threshold(threshold);
-        // Find contours which are between the size of 9 pixels ($1) and 500 pixels ($2).
+        // Find contours which are between the size of 9 pixels ($1) and 1500 pixels ($2).
         // Also, find holes is set to false ($4) so it will not get interior contours.
-        contourFinder.findContours(grayDiff, 9, 500, 8, false, true);
+        contourFinder.findContours(grayDiff, 5, 1500, 8, false, true);
 
 
         vector<centroid> currentCentroids;
@@ -154,6 +154,7 @@ void ofApp::update() {
         vector<centroid> oldCentroidsToUpdate;
         vector<centroid> centroidsToUpdate;
         vector<centroid> centroidsToAdd;
+        int OSCout = 0;
 
         ofxOscBundle bundle;
         ofxOscMessage message;
@@ -245,17 +246,20 @@ void ofApp::update() {
                 message.addFloatArg(centroids[i].perimeter);
                 bundle.addMessage(message);
                 if (DEBUG_OSC) {
-                    cout <<
-                        "    BlobID : " << centroids[i].UID <<
-                        "      posX : " << centroids[i].position.x <<
-                        "      posY : " << centroids[i].position.y <<
-                        "      posZ : " << (int)centroids[i].pressure <<
-                        " perimeter : " << (int)centroids[i].perimeter <<
+                        OSCout++;
+                        cout <<
+                        "  BlobID : " << (int)centroids[i].UID <<
+                        "  posX : " << (int)centroids[i].position.x <<
+                        "  posY : " << (int)centroids[i].position.y <<
+                        "  posZ : " << (int)centroids[i].pressure <<
+                        "  perimeter : " << (int)centroids[i].perimeter <<
                     endl;
                 }
             }
         }
+        if (DEBUG_OSC) cout << "Bundel sise : " << OSCout << endl;
         sender.sendBundle(bundle);
+        if (DEBUG_OSC) OSCout = 0;
     }
 
     //////// Change vertices by the matrix sensors values
