@@ -29,6 +29,15 @@ From the beginning this project stimulates the development of technologies in ar
 - Open Hardware PCB made with Upverter: GERBER files to produce the PCB
 - Open Hardware DIY eTextile sensor: see the HOWTO.pdf
 
+## Publications
+![NIME17](http://www.nime2017.org/) - Designing a Multi-Touch eTextile for Music Performances.
+Maurin Donneaud, Cedric Honnet, Paul Strohmeier
+![Paper](https://etextile.github.io/resistiveMatrix/publications/NIME17-eTextile.pdf) - ![Video](https://vimeo.com/217690743)
+
+![MOCO17](http://moco17.movementcomputing.org/) - Music Skin: Fabric Interface for Expressive Music Control.
+Maurin Donneaud, Cedric Honnet, Paul Strohmeier
+![Paper](https://etextile.github.io/resistiveMatrix/publications/MOCO17-MusicSkin.pdf)
+
 ## Kit Ordering
 If you want a sensor just drop me an eMail at contact@eTextile.org
 I make all sensors bay hand. It take one or two days to make it and send it by post.
